@@ -7,6 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="popup-overlay" id="tourPopup">
+    <div class="popup-box">
+      <button class="popup-close" onclick="closePopup()">×</button>
+      <p class="eyebrow">TRAVEL NOTICE</p>
+      <h2>Pensacola, Florida</h2>
+      <p class="text">
+        Touring <strong>July 5–7</strong>. Thoughtful inquiries are welcome in advance.
+      </p>
+      <div class="buttons">
+        <a href="contact.html" class="button">Begin Inquiry</a>
+        <button class="button ghost" onclick="closePopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="brand">KEIKI</div>
     <nav class="nav">
@@ -32,7 +47,7 @@
           Everything here is meant to feel thoughtful, soft, and beautifully considered.
         </p>
         <div class="buttons">
-          <a href="contact.html" class="button">Inquire</a>
+          <a href="contact.html" class="button">Begin Inquiry</a>
           <a href="about.html" class="button ghost">Learn More</a>
         </div>
       </div>
@@ -84,17 +99,33 @@
     </section>
 
     <section class="card-section">
-      <p class="eyebrow">CONTACT</p>
+      <p class="eyebrow">CONNECT</p>
       <h2>For collaborations, media, and select inquiries.</h2>
       <p class="text">
         Thoughtful communication is always appreciated.
       </p>
-      <a href="contact.html" class="button">Contact</a>
+
+      <div class="buttons">
+        <a href="contact.html" class="button">Begin Inquiry</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+        <a href="https://x.com/yourhandle" target="_blank">X</a>
+        <a href="https://bsky.app/profile/yourhandle" target="_blank">Bluesky</a>
+        <a href="https://tiktok.com/@yourhandle" target="_blank">TikTok</a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <p>© 2026 by KEIKI. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    function closePopup() {
+      document.getElementById('tourPopup').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
