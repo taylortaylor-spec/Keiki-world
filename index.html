@@ -5,57 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Keiki</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <p class="tiny">KEIKI</p>
-      <h1>You didn't find me by accident.</h1>
-      <p class="lead">
-        A space built around exotic cuteness, wit, mood, and presence. 
-        For collaborations, media, and select inquiries, start below.
-      </p>
+  <header class="site-header">
+    <div class="brand">KEIKI</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#experience">Experience</a>
+      <a href="#journal">Journal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      <div class="buttons">
-        <a href="#contact" class="button">Inquire</a>
-        <a href="#about" class="button ghost">About</a>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">SEATTLE</p>
+        <h1>You didn’t find me by accident.</h1>
+        <p class="lead">
+          A space built around beauty, wit, mood, and presence.
+        </p>
+        <div class="buttons">
+          <a href="#contact" class="button">Inquire</a>
+          <a href="#gallery" class="button ghost">View Gallery</a>
+        </div>
       </div>
-    </header>
-
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        I conjure quiet worlds where light lingers on satin and shadow.
-        Through image, texture, and the small, deliberate details, I shape
-        moments that feel like secret invitations.
-      </p>
-    </section>
-
-    <section id="gallery" class="card">
-      <h2>Gallery</h2>
-      <div class="gallery cards">
-        <figure>
-          <img class="img-cover" src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60" alt="Artful still life">
-        </figure>
-        <figure>
-          <img class="img-cover" src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?auto=format&fit=crop&w=1200&q=60" alt="Minimal interior">
-        </figure>
-        <figure>
-          <img class="img-cover" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1200&q=60" alt="Textured detail">
-        </figure>
-        <figure>
-          <img class="img-cover" src="https://images.unsplash.com/photo-1519710777748-8e3a70f0d05f?auto=format&fit=crop&w=1200&q=60" alt="Curated object">
-        </figure>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/700x900" alt="Keiki portrait placeholder">
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
+    <section id="about" class="split card-section">
+      <div>
+        <h2>About</h2>
+        <p>
+          I create a world shaped by atmosphere, image, intelligence, and feminine presence.
+        </p>
+      </div>
+      <div>
+        <p>
+          This site is a quiet invitation into my aesthetic, perspective, and carefully chosen moments.
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="image-band">
+      <img src="https://via.placeholder.com/1200x700" alt="Gallery placeholder">
+    </section>
+
+    <section id="experience" class="card-section">
+      <h2>An experience that feels unhurried.</h2>
       <p>
-        Email: <a href="mailto:hello@yourdomain.com">keikipacificmuse@gmail.com</a>
+        I’m drawn to spaces, moods, and moments that feel beautiful, easeful, and intentional.
+        Everything here should feel polished without feeling forced.
       </p>
+      <a href="#contact" class="button">Start Here</a>
+    </section>
+
+    <section id="journal" class="card-section">
+      <h2>Journal</h2>
+      <p>
+        Notes on beauty, mood, travel, books, rituals, and everything that shapes my world.
+      </p>
+    </section>
+
+    <section id="contact" class="card-section">
+      <h2>Inquire</h2>
+      <p>Email: hello@youremail.com</p>
+      <p>Instagram • X • Bluesky</p>
+    </section>
+
+    <section class="newsletter card-section">
+      <h2>Join the Newsletter</h2>
+      <p>Get updates, thoughts, and first access to what’s new.</p>
+      <form class="newsletter-form">
+        <input type="text" placeholder="First name">
+        <input type="email" placeholder="Email">
+        <button type="submit">Subscribe</button>
+      </form>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>© 2026 by KEIKI. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
