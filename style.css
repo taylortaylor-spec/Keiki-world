@@ -252,3 +252,53 @@ img {
     height: 520px;
   }
 }
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 16, 13, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 999;
+}
+
+.popup-box {
+  position: relative;
+  max-width: 560px;
+  width: 100%;
+  background: #f8f2eb;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+}
+
+.popup-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1f1a17;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #1f1a17;
+  border-bottom: 1px solid rgba(31, 26, 23, 0.3);
+  padding-bottom: 2px;
+}
