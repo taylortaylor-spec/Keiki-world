@@ -40,30 +40,29 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
   align-items: center;
-  padding: 60px 32px;
-  max-width: 1200px;
+  padding: 80px 40px 60px;
+  max-width: 1280px;
   margin: 0 auto;
 }
-
 .hero-text h1 {
-  font-size: 64px;
-  line-height: 1;
-  margin: 12px 0 18px;
+  font-size: 72px;
+  line-height: 0.98;
+  margin: 12px 0 20px;
+  max-width: 520px;
 }
-
 .eyebrow {
   font-size: 12px;
   letter-spacing: 0.28em;
 }
 
 .lead {
-  font-size: 20px;
-  max-width: 520px;
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 540px;
 }
-
 .text {
   font-size: 18px;
   max-width: 560px;
