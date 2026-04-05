@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taylortaylor-spec.github.io/Keiki-world/sitemap.xml
