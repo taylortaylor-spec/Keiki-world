@@ -173,7 +173,57 @@
     .closing-actions {
       padding: 0 48px 100px;
     }
+    .city-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
 
+.city-link-card {
+  border: 1px solid var(--border);
+  background: var(--cream);
+  padding: 22px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.25s ease, transform 0.25s ease;
+  display: block;
+}
+
+.city-link-card:hover {
+  background: var(--warm);
+  transform: translateY(-2px);
+}
+
+.city-link-kicker {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.56rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.city-link-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+
+.city-link-text {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .city-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
     @media (max-width: 900px) {
       .experience-intro {
         padding: 150px 24px 32px;
@@ -375,6 +425,58 @@
           a bit of movement, and daily personal routine so everything stays smooth, polished,
           and enjoyable for everyone involved.
         </p>
+        <div class="experience-panel">
+  <div class="experience-panel-label">Cities</div>
+  <h2>Where I’m most often requested.</h2>
+  <p>
+    Seattle is home base, with select travel welcomed in cities that feel aligned and thoughtfully planned.
+    If you’re searching by location, you can explore the pages below for more detail.
+  </p>
+
+  <div class="city-links-grid">
+    <a href="seattle.html" class="city-link-card">
+      <div class="city-link-kicker">Home Base</div>
+      <div class="city-link-title">Seattle</div>
+      <div class="city-link-text">My main city for beautifully planned time, polished social bookings, and thoughtful introductions.</div>
+    </a>
+
+    <a href="florida.html" class="city-link-card">
+      <div class="city-link-kicker">Current Travel</div>
+      <div class="city-link-title">Florida</div>
+      <div class="city-link-text">For select Florida dates, warm-weather travel, and beautifully arranged time away from home.</div>
+    </a>
+
+    <a href="los-angeles.html" class="city-link-card">
+      <div class="city-link-kicker">West Coast</div>
+      <div class="city-link-title">Los Angeles</div>
+      <div class="city-link-text">Refined company for polished evenings, hotel dates, and thoughtfully arranged West Coast travel.</div>
+    </a>
+
+    <a href="san-francisco.html" class="city-link-card">
+      <div class="city-link-kicker">West Coast</div>
+      <div class="city-link-title">San Francisco</div>
+      <div class="city-link-text">Quiet luxury, beautiful dinners, and discreet company in one of my favorite travel rhythms.</div>
+    </a>
+
+    <a href="new-york.html" class="city-link-card">
+      <div class="city-link-kicker">East Coast</div>
+      <div class="city-link-title">New York</div>
+      <div class="city-link-text">For elegant dinners, polished appearances, and select East Coast time that feels beautifully chosen.</div>
+    </a>
+
+    <a href="chicago.html" class="city-link-card">
+      <div class="city-link-kicker">Travel</div>
+      <div class="city-link-title">Chicago</div>
+      <div class="city-link-text">Thoughtful company for refined dates, celebrations, and city time with atmosphere and ease.</div>
+    </a>
+
+    <a href="boston.html" class="city-link-card">
+      <div class="city-link-kicker">East Coast</div>
+      <div class="city-link-title">Boston</div>
+      <div class="city-link-text">A longtime strong city for polished, elegant company and beautifully planned travel dates.</div>
+    </a>
+  </div>
+</div>
         <a class="experience-link" href="client-flow.html">How to Access Keiki</a>
       </div>
 
