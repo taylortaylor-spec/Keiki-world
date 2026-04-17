@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DKVEDRJF93"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DKVEDRJF93');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Keiki</title>
+  <meta name="description" content="Frequently asked questions about booking, rates, travel, deposits, privacy, and beautifully chosen time with Keiki." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .faq-intro {
+      padding: 170px 48px 36px;
+    }
+
+    .faq-layout {
+      padding: 0 48px 60px;
+    }
+
+    .faq-section {
+      margin-bottom: 44px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.28);
+      padding: 34px 30px;
+    }
+
+    .faq-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-section-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .faq-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .faq-item {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-question {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--muted);
+      max-width: 900px;
+    }
+
+    .faq-answer strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .faq-closing {
+      padding: 0 48px 100px;
+    }
+
+    .faq-closing-panel {
+      border-top: 1px solid var(--border);
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .faq-intro {
+        padding: 150px 24px 28px;
+      }
+
+      .faq-layout {
+        padding: 0 24px 40px;
+      }
+
+      .faq-section {
+        padding: 28px 22px;
+        margin-bottom: 24px;
+      }
+
+      .faq-question {
+        font-size: 1.25rem;
+      }
+
+      .faq-closing {
+        padding: 0 24px 64px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="travel-banner" onclick="document.getElementById('modal-overlay').classList.add('open')">
+    Now touring <span>Pensacola, FL — July 5–7</span> · Thoughtful inquiries welcome in advance
+    <span class="close-x" onclick="event.stopPropagation(); this.parentElement.style.display='none'">×</span>
+  </div>
+
+  <div id="modal-overlay" onclick="this.classList.remove('open')">
+    <div id="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="document.getElementById('modal-overlay').classList.remove('open')">Close ×</button>
+      <div class="modal-label">Travel Notice</div>
+      <h2>Pensacola,<br>Florida</h2>
+      <p>Touring July 5–7. Thoughtful inquiries are welcome in advance. Please allow time for a proper introduction before the dates approach.</p>
+      <a href="contact.html" class="btn-primary">Begin Inquiry</a>
+    </div>
+  </div>
+
+  <div class="city-ticker">
+    <div class="ticker-track">
+      <span class="ticker-item"><span>✦</span> Seattle</span>
+      <span class="ticker-item"><span>✦</span> Los Angeles</span>
+      <span class="ticker-item"><span>✦</span> New York</span>
+      <span class="ticker-item"><span>✦</span> Miami</span>
+      <span class="ticker-item"><span>✦</span> Chicago</span>
+      <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Las Vegas</span>
+      <span class="ticker-item"><span>✦</span> Pensacola</span>
+      <span class="ticker-item"><span>✦</span> Tokyo</span>
+      <span class="ticker-item"><span>✦</span> London</span>
+      <span class="ticker-item"><span>✦</span> Seattle</span>
+      <span class="ticker-item"><span>✦</span> Los Angeles</span>
+      <span class="ticker-item"><span>✦</span> New York</span>
+      <span class="ticker-item"><span>✦</span> Miami</span>
+      <span class="ticker-item"><span>✦</span> Chicago</span>
+      <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Las Vegas</span>
+      <span class="ticker-item"><span>✦</span> Pensacola</span>
+      <span class="ticker-item"><span>✦</span> Tokyo</span>
+      <span class="ticker-item"><span>✦</span> London</span>
+    </div>
+  </div>
+
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Keiki</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="faq-intro reveal">
+    <div class="section-label">FAQ</div>
+    <h1 class="section-title">Questions, answered thoughtfully.</h1>
+    <p class="section-body">
+      Everything here is meant to make the process feel clear, polished, and easy to understand from the start.
+    </p>
+  </section>
+
+  <section class="faq-layout">
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Booking & Inquiries</div>
+      <h2>How to begin.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">How do I book time with you?</div>
+        <div class="faq-answer">
+          The best way to begin is through my booking form. It keeps everything clear, complete, and easy to review. Thoughtful introductions are always appreciated.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What should I include in my inquiry?</div>
+        <div class="faq-answer">
+          Please include your name, requested date, city, length of time, and the kind of experience you have in mind, along with any screening details requested on my booking form. The more complete your inquiry, the easier it is for me to consider it properly.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you prefer the booking form or direct email?</div>
+        <div class="faq-answer">
+          The booking form is always preferred. It is the most efficient and organized way to reach me. Direct email is available, but complete details are still expected.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer a more discreet contact option?</div>
+        <div class="faq-answer">
+          Yes. For more discreet parties, I can also be reached at <strong>keikiconnoisseur@protonmail.ch</strong>. If you choose that route, please still include everything requested on my booking form. Replies there may take a bit longer.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How long does it take to hear back from you?</div>
+        <div class="faq-answer">
+          Response times vary depending on volume, schedule, and how complete the inquiry is. Thoughtful, complete messages are always easier to prioritize.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you respond to all inquiries?</div>
+        <div class="faq-answer">
+          I prioritize messages that are respectful, complete, and clearly aligned. Incomplete or careless inquiries may not receive a response.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you accept last-minute requests?</div>
+        <div class="faq-answer">
+          Sometimes, but advance planning is always preferred. The best experiences tend to be the ones arranged with care.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Rates & Reserved Time</div>
+      <h2>Time, clearly outlined.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">What are your current rates?</div>
+        <div class="faq-answer">
+          My current rates are listed on the Experience page and reflect my time, presence, and the care that goes into beautifully planned experiences.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What is your minimum booking?</div>
+        <div class="faq-answer">
+          My minimums and current offerings are listed on the Experience page. Please review them before reaching out so your inquiry can be as clear as possible.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer longer bookings?</div>
+        <div class="faq-answer">
+          Yes. Longer engagements are available and often make for the most natural, enjoyable, and unrushed experiences.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer virtual time?</div>
+        <div class="faq-answer">
+          Yes. Virtual sessions are available in select lengths and are listed on the Experience page.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer couples bookings?</div>
+        <div class="faq-answer">
+          Yes, by request. Both parties must complete screening in advance.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Are your rates negotiable?</div>
+        <div class="faq-answer">
+          My rates are set with intention and are not offered as an opening point for negotiation.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What is compensation for?</div>
+        <div class="faq-answer">
+          Compensation is for my <strong>time only</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Deposits & Payment</div>
+      <h2>Booking policy.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">Is a deposit required?</div>
+        <div class="faq-answer">
+          Yes. A deposit is required to reserve time.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How much is the deposit?</div>
+        <div class="faq-answer">
+          For bookings under 3 hours, the deposit is <strong>30%</strong>. For bookings of 3 hours or more, the deposit is <strong>50%</strong>. Travel bookings require <strong>50%</strong> in advance.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What payment methods do you accept?</div>
+        <div class="faq-answer">
+          Deposits may be sent via <strong>Cash App, Venmo, Zelle, or BTC</strong>.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Are deposits refundable?</div>
+        <div class="faq-answer">
+          Deposits are non-refundable unless I cancel, in which case the deposit is returned in full.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What happens if I need to cancel?</div>
+        <div class="faq-answer">
+          If a cancellation occurs within 72 hours, <strong>50% of the deposit is owed</strong>. If a cancellation occurs within 24 hours, the <strong>full deposit is owed</strong>.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">When is the remaining balance due?</div>
+        <div class="faq-answer">
+          Final details are handled privately once a booking is confirmed.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Travel</div>
+      <h2>Travel, planned properly.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">Are you available for travel?</div>
+        <div class="faq-answer">
+          Yes, travel may be available by request.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What are your travel minimums?</div>
+        <div class="faq-answer">
+          West Coast travel begins at a <strong>4-hour minimum</strong>. East Coast travel begins at a <strong>6-hour minimum</strong>.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer fly-me-to-you arrangements?</div>
+        <div class="faq-answer">
+          Yes, for select requests planned in advance.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What is required for international travel?</div>
+        <div class="faq-answer">
+          International arrangements should include <strong>business class or first class airfare</strong>, with accommodations arranged in advance.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How much notice do you prefer for travel?</div>
+        <div class="faq-answer">
+          As much notice as possible. Travel is always best when it is planned thoughtfully and with enough time for everything to be handled smoothly.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you need downtime during longer travel bookings?</div>
+        <div class="faq-answer">
+          Yes. For overnight and 24-hour-plus itineraries, I appreciate time built in for rest, meals, movement, and personal routine so everything stays polished and enjoyable for everyone involved.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Screening & Privacy</div>
+      <h2>Discretion matters.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you require screening?</div>
+        <div class="faq-answer">
+          Yes. Screening is part of creating a respectful, safe, and seamless experience.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Why do you require screening?</div>
+        <div class="faq-answer">
+          Because clarity, comfort, and discretion matter. It helps ensure that time together begins on the right footing.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Is my information kept private?</div>
+        <div class="faq-answer">
+          Discretion is deeply valued. Information shared for booking purposes is treated with care and respect.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I remain discreet?</div>
+        <div class="faq-answer">
+          Yes. I understand the importance of privacy and appreciate thoughtful handling on both sides.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can high-profile or especially private individuals reach out?</div>
+        <div class="faq-answer">
+          Yes. Discretion, polish, and respectful communication are always appreciated.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">What I’m Best Suited For</div>
+      <h2>Where I tend to shine.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">What kinds of experiences are you best suited for?</div>
+        <div class="faq-answer">
+          I’m best suited for beautifully planned time: dinners, celebrations, weddings, work events, shopping days, travel, wellness-minded plans, and weekend itineraries that feel elevated, effortless, and memorable.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Are you comfortable as a plus-one?</div>
+        <div class="faq-answer">
+          Yes. I’m very comfortable in polished social settings and plus-one situations where warmth, poise, and presence matter.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you enjoy travel and exploring new places?</div>
+        <div class="faq-answer">
+          Very much. I love beautiful hotels, new cities, thoughtful restaurants, and experiences that feel well chosen.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What kind of atmosphere do you enjoy most?</div>
+        <div class="faq-answer">
+          I’m drawn to beautiful settings, thoughtful pacing, ease, discretion, and the sort of chemistry that feels natural rather than forced.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Who do you tend to get along best with?</div>
+        <div class="faq-answer">
+          Those who value kindness, emotional intelligence, discretion, and a warm, naturally polished presence tend to be the best fit.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Etiquette & Communication</div>
+      <h2>The tone matters.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">What kind of communication do you appreciate most?</div>
+        <div class="faq-answer">
+          Clear, respectful, well-considered communication is always appreciated.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you respond to incomplete availability texts?</div>
+        <div class="faq-answer">
+          I prioritize complete inquiries. One-line messages or vague requests are usually not the best way to begin.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I send explicit messages?</div>
+        <div class="faq-answer">
+          I appreciate polished, respectful communication. Thoughtfulness always makes a better impression than urgency.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Why do you place so much value on thoughtful communication?</div>
+        <div class="faq-answer">
+          Because the tone at the beginning often says a great deal about the overall experience. Beautifully chosen time usually begins with a well-chosen introduction.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What makes someone a strong fit for your style?</div>
+        <div class="faq-answer">
+          Kindness, generosity of spirit, emotional intelligence, discretion, and a genuine appreciation for atmosphere, beauty, and ease.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section reveal">
+      <div class="faq-section-label">Availability & Updates</div>
+      <h2>Staying in the loop.</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">How can I stay updated on travel dates and availability?</div>
+        <div class="faq-answer">
+          The best way is through my newsletter or other updates shared through my site.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you send a newsletter?</div>
+        <div class="faq-answer">
+          Yes. It’s the best place for travel notes, select availability, and occasional updates worth opening.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How often do you send updates?</div>
+        <div class="faq-answer">
+          Only as needed. I prefer thoughtful communication over constant noise.
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="faq-closing reveal">
+    <div class="faq-closing-panel">
+      <div class="section-label" style="justify-content:center;">Next</div>
+      <h2 class="section-title">If this feels aligned, the next step is simple: begin with a complete inquiry.</h2>
+      <p class="section-body" style="margin: 0 auto 28px; text-align:center;">
+        The clearest starts tend to make for the smoothest experiences.
+      </p>
+
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="contact.html" class="btn-primary">Begin Inquiry</a>
+        <a href="experience.html" class="btn-ghost">View Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">Keiki</a>
+    <span class="footer-copy">© 2026 by Keiki. All rights reserved.</span>
+    <div class="footer-access">
+      <a href="client-flow.html">How to Access Keiki →</a>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
