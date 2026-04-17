@@ -195,7 +195,7 @@ body::before {
 /* ── NAV ── */
 nav {
   position: fixed;
-  top: 0;
+  top: 58px;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -205,7 +205,6 @@ nav {
   padding: 22px 48px;
   transition: background 0.4s ease, padding 0.3s ease;
 }
-
 nav.scrolled {
   background: rgba(245,240,232,0.96);
   backdrop-filter: blur(12px);
@@ -262,7 +261,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 120px 48px 80px;
+  padding: 170px 48px 80px;
   gap: 60px;
   position: relative;
   overflow: hidden;
@@ -683,13 +682,17 @@ footer {
 }
 
 @media (max-width: 900px) {
-  nav { padding: 18px 24px; }
+  nav {
+    top: 58px;
+    padding: 18px 24px;
+  }
+
   nav.scrolled { padding: 12px 24px; }
   .nav-links { gap: 20px; }
 
   .hero {
     grid-template-columns: 1fr;
-    padding: 100px 24px 60px;
+    padding: 150px 24px 60px;
     gap: 40px;
   }
 
