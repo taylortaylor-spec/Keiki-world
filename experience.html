@@ -1,198 +1,455 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience | Keiki</title>
+  <meta name="description" content="Rates, travel, deposits, and beautifully chosen time with Keiki." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKVEDRJF93"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-DKVEDRJF93');
   </script>
+
+  <style>
+    .experience-intro {
+      padding: 170px 48px 42px;
+    }
+
+    .experience-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 44px;
+      padding: 0 48px 48px;
+      align-items: start;
+    }
+
+    .experience-main,
+    .experience-side {
+      min-width: 0;
+    }
+
+    .experience-panel {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.28);
+      padding: 34px 30px;
+      margin-bottom: 24px;
+    }
+
+    .experience-panel:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-panel-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .experience-panel h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .experience-panel p {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .experience-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-image {
+      margin-bottom: 24px;
+    }
+
+    .experience-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .experience-image-caption {
+      margin-top: 10px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .rates-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .rate-card {
+      border: 1px solid var(--border);
+      background: var(--cream);
+      padding: 24px 22px;
+      min-height: 100%;
+    }
+
+    .rate-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .rate-card p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    .policy-note strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .experience-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .experience-link:hover {
+      color: var(--ink);
+    }
+
+    .side-note {
+      background: var(--ink);
+      border: 1px solid rgba(184,155,106,0.25);
+    }
+
+    .side-note .experience-panel-label,
+    .side-note h2,
+    .side-note p {
+      color: var(--cream);
+    }
+
+    .side-note p {
+      color: rgba(245,240,232,0.82);
+    }
+
+    .closing-actions {
+      padding: 0 48px 100px;
+    }
+
+    @media (max-width: 900px) {
+      .experience-intro {
+        padding: 150px 24px 32px;
+      }
+
+      .experience-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 24px 32px;
+      }
+
+      .rates-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .closing-actions {
+        padding: 0 24px 64px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">KEIKI</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="experience.html">Experience</a>
-      <a href="journal.html">Journal</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main class="page-wrap">
-    <section class="card-section rates-section">
-      <p class="eyebrow">EXPERIENCE</p>
-      <h1>Petite, polished, and intentionally warm.</h1>
-      <p class="lead">
-        For those drawn to beauty, presence, discretion, and time that feels thoughtfully chosen.
-      </p>
-      <p class="text">
-        I’m best suited to beautifully planned time: birthdays, dinners, shopping days, weddings,
-        work events, travel, wellness-minded days, weekend itineraries, and moments that deserve
-        to feel elevated, effortless, and memorable.
-      </p>
-      <p class="text">
-        I love being part of a well-planned day — whether that means a celebratory evening,
-        a polished plus-one presence, a foodie experience, a shopping outing, a weekend away,
-        or simply exploring the world with someone who values atmosphere, ease, and genuine company.
-      </p>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-      <div class="rates-grid">
-        <div class="rate-card">
-          <h3>One Hour</h3>
-          <p class="price">$800</p>
-          <p>Ideal for a polished appearance, dinner companion role, or brief social booking.</p>
-        </div>
+  <div id="travel-banner" onclick="document.getElementById('modal-overlay').classList.add('open')">
+    Now touring <span>Pensacola, FL — July 5–7</span> · Thoughtful inquiries welcome in advance
+    <span class="close-x" onclick="event.stopPropagation(); this.parentElement.style.display='none'">×</span>
+  </div>
 
-        <div class="rate-card">
-          <h3>90 Minutes</h3>
-          <p class="price">$1,000</p>
-          <p>A little more room to settle into the moment and enjoy a natural rhythm.</p>
-        </div>
+  <div id="modal-overlay" onclick="this.classList.remove('open')">
+    <div id="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="document.getElementById('modal-overlay').classList.remove('open')">Close ×</button>
+      <div class="modal-label">Travel Notice</div>
+      <h2>Pensacola,<br>Florida</h2>
+      <p>Touring July 5–7. Thoughtful inquiries are welcome in advance. Please allow time for a proper introduction before the dates approach.</p>
+      <a href="contact.html" class="btn-primary">Begin Inquiry</a>
+    </div>
+  </div>
 
-        <div class="rate-card">
-          <h3>Two Hours</h3>
-          <p class="price">$1,500</p>
-          <p>For a more relaxed flow, thoughtful conversation, and time that feels less rushed.</p>
-        </div>
+  <div class="city-ticker">
+    <div class="ticker-track">
+      <span class="ticker-item"><span>✦</span> Seattle</span>
+      <span class="ticker-item"><span>✦</span> Los Angeles</span>
+      <span class="ticker-item"><span>✦</span> New York</span>
+      <span class="ticker-item"><span>✦</span> Miami</span>
+      <span class="ticker-item"><span>✦</span> Chicago</span>
+      <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Las Vegas</span>
+      <span class="ticker-item"><span>✦</span> Pensacola</span>
+      <span class="ticker-item"><span>✦</span> Tokyo</span>
+      <span class="ticker-item"><span>✦</span> London</span>
+      <span class="ticker-item"><span>✦</span> Seattle</span>
+      <span class="ticker-item"><span>✦</span> Los Angeles</span>
+      <span class="ticker-item"><span>✦</span> New York</span>
+      <span class="ticker-item"><span>✦</span> Miami</span>
+      <span class="ticker-item"><span>✦</span> Chicago</span>
+      <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Las Vegas</span>
+      <span class="ticker-item"><span>✦</span> Pensacola</span>
+      <span class="ticker-item"><span>✦</span> Tokyo</span>
+      <span class="ticker-item"><span>✦</span> London</span>
+    </div>
+  </div>
 
-        <div class="rate-card">
-          <h3>Three Hours</h3>
-          <p class="price">$2,100</p>
-          <p>Designed for those who prefer an experience that feels more fully chosen.</p>
-        </div>
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Keiki</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-        <div class="rate-card">
-          <h3>Four Hours</h3>
-          <p class="price">$2,500</p>
-          <p>Best for extended dinners, outings, beautifully planned evenings, or West Coast travel requests.</p>
-        </div>
+  <section class="experience-intro reveal">
+    <div class="section-label">Experience</div>
+    <h1 class="section-title">Petite, polished, and intentionally warm.</h1>
+    <p class="section-body">
+      For those drawn to beauty, presence, discretion, and time that feels thoughtfully chosen.
+    </p>
+  </section>
 
-        <div class="rate-card">
-          <h3>Six Hours</h3>
-          <p class="price">$3,200</p>
-          <p>A half-day experience with room for movement, atmosphere, and intention. East Coast travel begins here.</p>
-        </div>
+  <section class="experience-layout">
+    <div class="experience-main reveal">
+      <div class="experience-panel">
+        <div class="experience-panel-label">What I’m best suited for</div>
+        <h2>Beautifully planned time.</h2>
+        <p>
+          I’m best suited to beautifully planned time: birthdays, dinners, shopping days, weddings,
+          work events, travel, wellness-minded days, weekend itineraries, and moments that deserve
+          to feel elevated, effortless, and memorable.
+        </p>
+        <p>
+          I love being part of a well-planned day — whether that means a celebratory evening,
+          a polished plus-one presence, a foodie experience, a shopping outing, a weekend away,
+          or simply exploring the world with someone who values atmosphere, ease, and genuine company.
+        </p>
+      </div>
 
-        <div class="rate-card">
-          <h3>Ten Hours</h3>
-          <p class="price">$5,000</p>
-          <p>For select long-form bookings, special occasions, and thoughtfully planned travel days.</p>
-        </div>
+      <div class="experience-panel">
+        <div class="experience-panel-label">Rates</div>
+        <h2>Reserved time.</h2>
 
-        <div class="rate-card">
-          <h3>Twelve Hours</h3>
-          <p class="price">$6,000</p>
-          <p>For full-day presence where continuity, ease, and polish matter.</p>
-        </div>
+        <div class="rates-grid">
+          <div class="rate-card">
+            <h3>One Hour</h3>
+            <p class="price">$800</p>
+            <p>Ideal for a polished appearance, dinner companion role, or brief social booking.</p>
+          </div>
 
-        <div class="rate-card">
-          <h3>Extended Time</h3>
-          <p class="price">By Request</p>
-          <p>Available for select arrangements planned in advance.</p>
-        </div>
+          <div class="rate-card">
+            <h3>90 Minutes</h3>
+            <p class="price">$1,000</p>
+            <p>A little more room to settle into the moment and enjoy a natural rhythm.</p>
+          </div>
 
-        <div class="rate-card">
-          <h3>Virtual 30 Minutes</h3>
-          <p class="price">$300</p>
-          <p>For conversation, guidance, or presence-centered virtual time.</p>
-        </div>
+          <div class="rate-card">
+            <h3>Two Hours</h3>
+            <p class="price">$1,500</p>
+            <p>For a more relaxed flow, thoughtful conversation, and time that feels less rushed.</p>
+          </div>
 
-        <div class="rate-card">
-          <h3>Virtual One Hour</h3>
-          <p class="price">$450</p>
-          <p>For longer virtual sessions and more in-depth conversation.</p>
-        </div>
+          <div class="rate-card">
+            <h3>Three Hours</h3>
+            <p class="price">$2,100</p>
+            <p>Designed for those who prefer an experience that feels more fully chosen.</p>
+          </div>
 
-        <div class="rate-card">
-          <h3>Couples</h3>
-          <p class="price">+$800</p>
-          <p>Available by request. Both parties must complete screening in advance.</p>
+          <div class="rate-card">
+            <h3>Four Hours</h3>
+            <p class="price">$2,500</p>
+            <p>Best for extended dinners, outings, beautifully planned evenings, or West Coast travel requests.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Six Hours</h3>
+            <p class="price">$3,200</p>
+            <p>A half-day experience with room for movement, atmosphere, and intention. East Coast travel begins here.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Ten Hours</h3>
+            <p class="price">$5,000</p>
+            <p>For select long-form bookings, special occasions, and thoughtfully planned travel days.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Twelve Hours</h3>
+            <p class="price">$6,000</p>
+            <p>For full-day presence where continuity, ease, and polish matter.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Extended Time</h3>
+            <p class="price">By Request</p>
+            <p>Available for select arrangements planned in advance.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Virtual 30 Minutes</h3>
+            <p class="price">$300</p>
+            <p>For conversation, guidance, or presence-centered virtual time.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Virtual One Hour</h3>
+            <p class="price">$450</p>
+            <p>For longer virtual sessions and more in-depth conversation.</p>
+          </div>
+
+          <div class="rate-card">
+            <h3>Couples</h3>
+            <p class="price">+$800</p>
+            <p>Available by request. Both parties must complete screening in advance.</p>
+          </div>
         </div>
       </div>
 
-      <section class="card-section" style="padding-left:0; padding-right:0;">
-        <p class="eyebrow">TRAVEL</p>
+      <div class="experience-panel">
+        <div class="experience-panel-label">Travel</div>
         <h2>Fly-Me-To-You</h2>
-        <p class="text">
+        <p>
           Travel may be available by request. West Coast travel begins at a 4-hour minimum.
           East Coast travel begins at a 6-hour minimum.
         </p>
-        <p class="text">
+        <p>
           For international travel, arrangements should include business class or first class airfare.
           Travel requests also require accommodations to be arranged in advance.
         </p>
-        <p class="text">
+        <p>
           For overnight and 24-hour+ itineraries, I appreciate time built in for rest, meals,
           a bit of movement, and daily personal routine so everything stays smooth, polished,
           and enjoyable for everyone involved.
         </p>
-<a href="client-flow.html">How to Access Keiki</a>
-      </section>
+        <a class="experience-link" href="client-flow.html">How to Access Keiki</a>
+      </div>
 
-      <section class="card-section" style="padding-left:0; padding-right:0;">
-        <p class="eyebrow">DEPOSITS</p>
+      <div class="experience-panel policy-note">
+        <div class="experience-panel-label">Deposits</div>
         <h2>Booking Policy</h2>
-        <p class="text">
-          A deposit is required to reserve time.
-        </p>
-        <p class="text">
+        <p>A deposit is required to reserve time.</p>
+        <p>
           For bookings under 3 hours, the deposit is <strong>30%</strong>.<br>
           For bookings of 3 hours or more, the deposit is <strong>50%</strong>.<br>
           For travel bookings, <strong>50%</strong> is required in advance.
         </p>
-        <p class="text">
+        <p>
           Deposits may be sent via <strong>Cash App, Venmo, Zelle, or BTC</strong>.
         </p>
-        <p class="text">
+        <p>
           Deposits are non-refundable unless I cancel, in which case the deposit is returned in full.
         </p>
-        <p class="text">
+        <p>
           If a cancellation occurs within 72 hours, <strong>50% of the deposit is owed</strong>.<br>
           If a cancellation occurs within 24 hours, the <strong>full deposit is owed</strong>.
         </p>
-        <p class="text">
+        <p>
           Compensation is for my <strong>time only</strong>.
         </p>
-      </section>
+      </div>
+    </div>
 
-      <section class="card-section" style="padding-left:0; padding-right:0;">
-        <p class="eyebrow">WHAT I’M BEST SUITED FOR</p>
-        <h2>Beautifully Chosen Time</h2>
-        <p class="text">
+    <div class="experience-side reveal">
+      <div class="experience-image">
+        <img src="IMG_3940.jpeg" alt="Keiki portrait" />
+        <div class="experience-image-caption">Soft luxury · thoughtful company</div>
+      </div>
+
+      <div class="experience-panel side-note">
+        <div class="experience-panel-label">Presence</div>
+        <h2>Ease, warmth, and polish.</h2>
+        <p>
+          If you value kindness, emotional intelligence, discretion, and a presence that feels
+          warm, feminine, and naturally polished, we’ll likely get along well.
+        </p>
+      </div>
+
+      <div class="experience-panel">
+        <div class="experience-panel-label">Select occasions</div>
+        <h2>Where I tend to shine.</h2>
+        <p>
           I’m at home in thoughtful restaurants, polished social settings, travel, celebrations,
           work events, weddings, shopping days, wellness-minded plans, and long weekends that
           feel inspiring rather than ordinary.
         </p>
-        <p class="text">
+        <p>
           I’ve joined birthdays, plus-one occasions, out-of-country travel, work functions,
           shopping trips, fitness-minded days, and memorable weekends built around exploring
           new places with ease and intention.
         </p>
-        <p class="text">
-          If you value kindness, emotional intelligence, discretion, and a presence that feels
-          warm, feminine, and naturally polished, we’ll likely get along well.
-        </p>
-      </section>
-
-      <div class="buttons">
-        <a href="contact.html" class="button">Inquire</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>© 2026 by KEIKI. All Rights Reserved.</p>
+  <section class="connect-section reveal closing-actions">
+    <div class="section-label">Next</div>
+    <h2 class="section-title">If it feels aligned, continue.</h2>
+    <p class="section-body">Thoughtful introductions are always appreciated.</p>
+
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn-primary">Inquire</a>
+      <a href="gallery.html" class="btn-ghost">View Gallery</a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">Keiki</a>
+    <span class="footer-copy">© 2026 by Keiki. All rights reserved.</span>
+    <div class="footer-access">
+      <a href="client-flow.html">How to Access Keiki →</a>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>
