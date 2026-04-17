@@ -1,141 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keiki</title>
-  <link rel="stylesheet" href="style.css" />
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKVEDRJF93"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <title>Keiki — Petite, polished, and intentionally warm.</title>
+  <meta name="description" content="A refined personal world shaped by ease, beauty, and genuine attention to detail." />
 
-    gtag('config', 'G-DKVEDRJF93');
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="client-flow.html" style="display:inline-block;padding:12px 20px;border-radius:999px;background:#1f1f1f;color:white;text-decoration:none;">How to Access Keiki</a>  <div class="popup-overlay" id="tourPopup">
-    <div class="popup-box">
-      <button class="popup-close" onclick="closePopup()">×</button>
-      <p class="eyebrow">TRAVEL NOTICE</p>
-      <h2>Pensacola, Florida</h2>
-      <p class="text">
-        Touring <strong>July 5–7</strong>. Thoughtful inquiries are welcome in advance.
-      </p>
-      <div class="buttons">
-        <a href="contact.html" class="button">Begin Inquiry</a>
-        <button class="button ghost" onclick="closePopup()">Close</button>
-      </div>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="travel-banner" onclick="document.getElementById('modal-overlay').classList.add('open')">
+    Now touring <span>Pensacola, FL — July 5–7</span> · Thoughtful inquiries welcome in advance
+    <span class="close-x" onclick="event.stopPropagation(); this.parentElement.style.display='none'">×</span>
+  </div>
+
+  <div id="modal-overlay" onclick="this.classList.remove('open')">
+    <div id="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="document.getElementById('modal-overlay').classList.remove('open')">Close ×</button>
+      <div class="modal-label">Travel Notice</div>
+      <h2>Pensacola,<br>Florida</h2>
+      <p>Touring July 5–7. Thoughtful inquiries are welcome in advance. Please allow time for a proper introduction before the dates approach.</p>
+      <a href="contact.html" class="btn-primary">Begin Inquiry</a>
     </div>
   </div>
 
-  <header class="site-header">
-    <div class="brand">KEIKI</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="experience.html">Experience</a>
-      <a href="journal.html">Journal</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <div class="city-ticker">
+    <div class="ticker-track">
+      <span class="ticker-item"><span>✦</span> Seattle</span>
+      <span class="ticker-item"><span>✦</span> Los Angeles</span>
+      <span class="ticker-item"><span>✦</span> New York</span>
+      <span class="ticker-item"><span>✦</span> Miami</span>
+      <span class="ticker-item"><span>✦</span> Chicago</span>
+      <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Las Vegas</span>
+      <span class="ticker-item"><span>✦</span> Pensacola</span>
+      <span class="ticker-item"><span>✦</span> Tokyo</span>
+      <span class="ticker-item"><span>✦</span> London</span>
+      <span class="ticker-item"><span>✦</span> Seattle</span>
+      <span class="ticker-item"><span>✦</span> Los Angeles</span>
+      <span class="ticker-item"><span>✦</span> New York</span>
+      <span class="ticker-item"><span>✦</span> Miami</span>
+      <span class="ticker-item"><span>✦</span> Chicago</span>
+      <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Las Vegas</span>
+      <span class="ticker-item"><span>✦</span> Pensacola</span>
+      <span class="ticker-item"><span>✦</span> Tokyo</span>
+      <span class="ticker-item"><span>✦</span> London</span>
+    </div>
+  </div>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">SEATTLE</p>
-        <h1>Petite, polished, and intentionally warm.</h1>
-        <p class="lead">
-          For those who value presence, discretion, and time that feels beautifully chosen.
-        </p>
-        <p class="text">
-          A refined personal world shaped by ease, beauty, and genuine attention to detail.
-          Everything here is meant to feel thoughtful, soft, and beautifully considered.
-        </p>
-        <div class="buttons">
-          <a href="contact.html" class="button">Begin Inquiry</a>
-          <a href="about.html" class="button ghost">Learn More</a>
-        </div>
-      </div>
+  <nav id="main-nav">
+    <a href="index.html" class="nav-logo">Keiki</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-      <div class="hero-image">
-        <img src="IMG_3665.jpeg" alt="Keiki portrait" />
-      </div>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-location">Seattle, Washington</div>
 
-    <section class="split card-section">
-      <div>
-        <p class="eyebrow">ABOUT</p>
-        <h2>A calm, feminine presence with an eye for beauty and atmosphere.</h2>
-      </div>
-      <div>
-        <p class="text">
-          I’m drawn to moments that feel polished without being forced, warm without being loud,
-          and memorable because they are chosen with intention.
-        </p>
-        <a href="about.html" class="button ghost">Read More</a>
-      </div>
-    </section>
+      <h1 class="hero-title">
+        Petite, polished,<br>
+        and <em>intentionally</em><br>
+        warm.
+      </h1>
 
-    <section class="feature-image-section">
-      <img src="IMG_3698.jpeg" alt="Keiki featured image" class="feature-image" />
-    </section>
-
-    <section class="card-section home-links">
-      <div class="home-link-card">
-        <p class="eyebrow">GALLERY</p>
-        <h3>Selected moments</h3>
-        <p>Explore the full gallery.</p>
-        <a href="gallery.html" class="button ghost">View Gallery</a>
-      </div>
-
-      <div class="home-link-card">
-        <p class="eyebrow">EXPERIENCE</p>
-        <h3>Time, attention, and presence</h3>
-        <p>View rates and details.</p>
-        <a href="experience.html" class="button ghost">View Experience</a>
-      </div>
-
-      <div class="home-link-card">
-        <p class="eyebrow">JOURNAL</p>
-        <h3>Notes on beauty, mood, and ritual</h3>
-        <p>Read reflections and updates.</p>
-        <a href="journal.html" class="button ghost">Open Journal</a>
-      </div>
-    </section>
-
-    <section class="card-section">
-      <p class="eyebrow">CONNECT</p>
-      <h2>For collaborations, media, and select inquiries.</h2>
-      <p class="text">
-        Thoughtful communication is always appreciated.
+      <p class="hero-body">
+        For those who value presence, discretion, and time that feels beautifully chosen.
+        A refined personal world shaped by ease, beauty, and genuine attention to detail.
       </p>
 
-      <div class="buttons">
-        <a href="contact.html" class="button">Begin Inquiry</a>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Begin Inquiry</a>
+        <a href="about.html" class="btn-ghost">Learn More</a>
       </div>
 
-      <div class="social-links">
-        <a href="https://instagram.com/keiki_sea" target="_blank">Instagram</a>
-        <a href="https://x.com/carenotfree" target="_blank">X</a>
-        <a href="https://bsky.app/profile/keikinw" target="_blank">Bluesky</a>
-      </div>
-    </section>
-  </main>
+      <div class="avail-dot">Currently accepting inquiries</div>
+    </div>
 
-  <footer class="footer">
-    <a href="client-flow.html">How to Access Keiki</a>
-    <p>© 2026 by KEIKI. All Rights Reserved.</p>
+    <div class="hero-image-wrap">
+      <img src="IMG_3665.jpeg" alt="Keiki portrait" />
+      <div class="hero-image-caption">Seattle · 2026</div>
+    </div>
+  </section>
+
+  <section class="about-section reveal">
+    <div class="about-image">
+      <img src="IMG_3698.jpeg" alt="Keiki" />
+    </div>
+    <div>
+      <div class="section-label">About</div>
+      <h2 class="section-title">A calm, feminine presence with an eye for beauty.</h2>
+      <p class="section-body">
+        I'm drawn to moments that feel polished without being forced, warm without being loud,
+        and memorable because they are chosen with intention. Soft luxury, not loud luxury.
+      </p>
+      <a href="about.html" class="btn-ghost">Read More</a>
+    </div>
+  </section>
+
+  <div class="quote-band reveal">
+    <blockquote>
+      “The right atmosphere changes everything.”
+    </blockquote>
+    <cite>Keiki</cite>
+  </div>
+
+  <section style="padding: 0; background: var(--cream);">
+    <div class="grid-3 reveal">
+      <a href="gallery.html" class="grid-card">
+        <div class="grid-card-label">Gallery</div>
+        <div class="grid-card-title">Selected<br>moments</div>
+        <div class="grid-card-body">
+          A curated look at presence, atmosphere, and time that feels beautifully considered.
+        </div>
+        <span class="grid-card-link">View Gallery</span>
+      </a>
+
+      <a href="experience.html" class="grid-card">
+        <div class="grid-card-label">Experience</div>
+        <div class="grid-card-title">Time, attention,<br>and presence</div>
+        <div class="grid-card-body">
+          Rates, availability, travel policy, and everything needed to plan thoughtfully.
+        </div>
+        <span class="grid-card-link">View Rates</span>
+      </a>
+
+      <a href="journal.html" class="grid-card">
+        <div class="grid-card-label">Journal</div>
+        <div class="grid-card-title">Notes on beauty,<br>mood, and ritual</div>
+        <div class="grid-card-body">
+          Books, passages, saved lines, and the things I keep returning to. Less blog, more archive.
+        </div>
+        <span class="grid-card-link">Open Journal</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="connect-section reveal">
+    <div class="section-label">Connect</div>
+    <h2 class="section-title">For collaborations, media,<br>and select inquiries.</h2>
+    <p class="section-body">Thoughtful communication is always appreciated.</p>
+    <a href="contact.html" class="btn-primary">Begin Inquiry</a>
+
+    <div class="social-links">
+      <a href="https://instagram.com/keiki_sea" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/carenotfree" target="_blank" rel="noopener">X</a>
+      <a href="https://bsky.app/profile/keikinw" target="_blank" rel="noopener">Bluesky</a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">Keiki</a>
+    <span class="footer-copy">© 2026 by Keiki. All rights reserved.</span>
+    <div class="footer-access">
+      <a href="client-flow.html">How to Access Keiki →</a>
+    </div>
   </footer>
 
-  <script>
-    function closePopup() {
-      document.getElementById('tourPopup').style.display = 'none';
-    }
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>
