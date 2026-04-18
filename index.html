@@ -2,23 +2,104 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DKVEDRJF93"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKVEDRJF93"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DKVEDRJF93');
+  </script>
 
-  gtag('config', 'G-DKVEDRJF93');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>About Keiki | Seattle Companion</title>
-<meta name="description" content="Learn more about Keiki, a Seattle companion known for a petite, polished, athletic, and warmly feminine presence." />
-  
+  <title>Seattle Companion | Keiki</title>
+  <meta name="description" content="Seattle companion Keiki offers polished, discreet, beautifully planned time for dinners, events, travel, and select engagements." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .city-feature {
+      padding: 90px 48px;
+      border-top: 1px solid var(--border);
+    }
+
+    .city-feature-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .city-feature-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .city-feature-link {
+      display: block;
+      padding: 18px 18px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.28);
+      text-decoration: none;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .city-feature-link:hover {
+      background: var(--warm);
+      transform: translateY(-2px);
+    }
+
+    .city-feature-kicker {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .city-feature-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .city-feature-text {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .newsletter-note {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .city-feature {
+        padding: 64px 24px;
+      }
+
+      .city-feature-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .city-feature-links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -48,16 +129,19 @@
       <span class="ticker-item"><span>✦</span> Miami</span>
       <span class="ticker-item"><span>✦</span> Chicago</span>
       <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Boston</span>
       <span class="ticker-item"><span>✦</span> Las Vegas</span>
       <span class="ticker-item"><span>✦</span> Pensacola</span>
       <span class="ticker-item"><span>✦</span> Tokyo</span>
       <span class="ticker-item"><span>✦</span> London</span>
+
       <span class="ticker-item"><span>✦</span> Seattle</span>
       <span class="ticker-item"><span>✦</span> Los Angeles</span>
       <span class="ticker-item"><span>✦</span> New York</span>
       <span class="ticker-item"><span>✦</span> Miami</span>
       <span class="ticker-item"><span>✦</span> Chicago</span>
       <span class="ticker-item"><span>✦</span> San Francisco</span>
+      <span class="ticker-item"><span>✦</span> Boston</span>
       <span class="ticker-item"><span>✦</span> Las Vegas</span>
       <span class="ticker-item"><span>✦</span> Pensacola</span>
       <span class="ticker-item"><span>✦</span> Tokyo</span>
@@ -81,17 +165,17 @@
     <div class="hero-text">
       <div class="hero-location">Seattle, Washington</div>
 
-<h1 class="hero-title">
-  Petite, polished,<br>
-  and <em>intentionally</em><br>
-  warm.
-</h1>
-      
+      <h1 class="hero-title">
+        Petite, polished,<br>
+        and <em>intentionally</em><br>
+        warm.
+      </h1>
+
       <p class="hero-body">
-  I’m a Seattle-based companion drawn to things that feel thoughtful rather than rushed,
-  warm rather than loud, and polished without losing softness. Petite, athletic, and naturally feminine,
-  I value discretion, atmosphere, and time that feels beautifully chosen.
-</p>
+        Seattle companion for those who value beauty, discretion, and time that feels beautifully chosen.
+        Petite, polished, athletic, and thoughtfully suited for dinners, events, travel, and select engagements.
+      </p>
+
       <div class="hero-actions">
         <a href="contact.html" class="btn-primary">Begin Inquiry</a>
         <a href="about.html" class="btn-ghost">Learn More</a>
@@ -101,23 +185,23 @@
     </div>
 
     <div class="hero-image-wrap">
-      <img src="IMG_3665.jpeg" alt="Seattle companion keiki in a soft, polished portrait" />
+      <img src="IMG_3665.jpeg" alt="Seattle companion Keiki in a soft, polished portrait" />
       <div class="hero-image-caption">Seattle · 2026</div>
     </div>
   </section>
 
   <section class="about-section reveal">
     <div class="about-image">
-      <img src="IMG_3698.jpeg" alt="Petite brunette companion portrait of keiki" />
+      <img src="IMG_3698.jpeg" alt="Petite brunette companion portrait of Keiki" />
     </div>
     <div>
       <div class="section-label">About</div>
       <h2 class="section-title">A calm, feminine presence with an eye for beauty.</h2>
       <p class="section-body">
-  I’m best matched with those who appreciate kindness, emotional intelligence, discretion,
-  and a refined sense of atmosphere. I tend to be most at home in beautifully planned settings,
-  thoughtful conversation, elegant nights out, and experiences with a natural rhythm.
-</p>
+        I’m best matched with those who appreciate kindness, emotional intelligence, discretion,
+        and a refined sense of atmosphere. I tend to be most at home in beautifully planned settings,
+        thoughtful conversation, elegant nights out, and experiences with a natural rhythm.
+      </p>
       <a href="about.html" class="btn-ghost">Read More</a>
     </div>
   </section>
@@ -131,63 +215,6 @@
 
   <section style="padding: 0; background: var(--cream);">
     <div class="grid-3 reveal">
-      <section class="city-feature reveal">
-  <div class="city-feature-grid">
-    <div>
-      <div class="section-label">Cities</div>
-      <h2 class="section-title">Seattle home base, with select travel beyond.</h2>
-      <p class="section-body">
-        Seattle is where I’m most at home, though I also welcome select travel when the details feel aligned.
-        For city-specific notes, travel rhythm, and the kinds of plans I’m best suited for, explore below.
-      </p>
-      <a href="experience.html" class="btn-ghost">View Experience</a>
-    </div>
-
-    <div class="city-feature-links">
-      <a href="seattle.html" class="city-feature-link">
-        <div class="city-feature-kicker">Home Base</div>
-        <div class="city-feature-title">Seattle</div>
-        <div class="city-feature-text">My main city for beautifully planned time.</div>
-      </a>
-
-      <a href="florida.html" class="city-feature-link">
-        <div class="city-feature-kicker">Current Travel</div>
-        <div class="city-feature-title">Florida</div>
-        <div class="city-feature-text">Select Florida dates and warm-weather travel.</div>
-      </a>
-
-      <a href="los-angeles.html" class="city-feature-link">
-        <div class="city-feature-kicker">West Coast</div>
-        <div class="city-feature-title">Los Angeles</div>
-        <div class="city-feature-text">Polished West Coast travel and city dates.</div>
-      </a>
-
-      <a href="new-york.html" class="city-feature-link">
-        <div class="city-feature-kicker">East Coast</div>
-        <div class="city-feature-title">New York</div>
-        <div class="city-feature-text">Elegant East Coast time, thoughtfully arranged.</div>
-      </a>
-
-      <a href="san-francisco.html" class="city-feature-link">
-        <div class="city-feature-kicker">West Coast</div>
-        <div class="city-feature-title">San Francisco</div>
-        <div class="city-feature-text">Quiet luxury and beautifully chosen travel time.</div>
-      </a>
-
-      <a href="chicago.html" class="city-feature-link">
-        <div class="city-feature-kicker">Travel</div>
-        <div class="city-feature-title">Chicago</div>
-        <div class="city-feature-text">Refined company with atmosphere and ease.</div>
-      </a>
-
-      <a href="boston.html" class="city-feature-link">
-        <div class="city-feature-kicker">East Coast</div>
-        <div class="city-feature-title">Boston</div>
-        <div class="city-feature-text">A longtime strong city for beautifully planned time.</div>
-      </a>
-    </div>
-  </div>
-</section>
       <a href="gallery.html" class="grid-card">
         <div class="grid-card-label">Gallery</div>
         <div class="grid-card-title">Selected<br>moments</div>
@@ -217,26 +244,85 @@
     </div>
   </section>
 
- <section class="connect-section reveal">
-  <div class="section-label">Newsletter</div>
-  <h2 class="section-title">For travel notes, availability,<br>and quiet updates.</h2>
-  <p class="section-body">
-    Join my list for travel details, select availability, and occasional notes worth opening.
-  </p>
+  <section class="city-feature reveal">
+    <div class="city-feature-grid">
+      <div>
+        <div class="section-label">Cities</div>
+        <h2 class="section-title">Seattle home base, with select travel beyond.</h2>
+        <p class="section-body">
+          Seattle is where I’m most at home, though I also welcome select travel when the details feel aligned.
+          For city-specific notes, travel rhythm, and the kinds of plans I’m best suited for, explore below.
+        </p>
+        <a href="experience.html" class="btn-ghost">View Experience</a>
+      </div>
 
-  <a href="https://forms.gle/LQGqQFCUZRZs9VYx9" target="_blank" rel="noopener" class="btn-primary">Join the List</a>
+      <div class="city-feature-links">
+        <a href="seattle.html" class="city-feature-link">
+          <div class="city-feature-kicker">Home Base</div>
+          <div class="city-feature-title">Seattle</div>
+          <div class="city-feature-text">My main city for beautifully planned time.</div>
+        </a>
 
-  <p class="newsletter-note">
-    Low volume. Thoughtful updates only.
-  </p>
+        <a href="florida.html" class="city-feature-link">
+          <div class="city-feature-kicker">Current Travel</div>
+          <div class="city-feature-title">Florida</div>
+          <div class="city-feature-text">Select Florida dates and warm-weather travel.</div>
+        </a>
 
-  <div class="social-links">
-    <a href="https://instagram.com/keiki_sea" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://x.com/carenotfree" target="_blank" rel="noopener">X</a>
-    <a href="https://bsky.app/profile/keikinw" target="_blank" rel="noopener">Bluesky</a>
-    <a href="https://onlyfans.com/keikipnw" target="_blank" rel="noopener">OnlyFans</a>  </div>
-</section>
-  
+        <a href="los-angeles.html" class="city-feature-link">
+          <div class="city-feature-kicker">West Coast</div>
+          <div class="city-feature-title">Los Angeles</div>
+          <div class="city-feature-text">Polished West Coast travel and city dates.</div>
+        </a>
+
+        <a href="new-york.html" class="city-feature-link">
+          <div class="city-feature-kicker">East Coast</div>
+          <div class="city-feature-title">New York</div>
+          <div class="city-feature-text">Elegant East Coast time, thoughtfully arranged.</div>
+        </a>
+
+        <a href="san-francisco.html" class="city-feature-link">
+          <div class="city-feature-kicker">West Coast</div>
+          <div class="city-feature-title">San Francisco</div>
+          <div class="city-feature-text">Quiet luxury and beautifully chosen travel time.</div>
+        </a>
+
+        <a href="chicago.html" class="city-feature-link">
+          <div class="city-feature-kicker">Travel</div>
+          <div class="city-feature-title">Chicago</div>
+          <div class="city-feature-text">Refined company with atmosphere and ease.</div>
+        </a>
+
+        <a href="boston.html" class="city-feature-link">
+          <div class="city-feature-kicker">East Coast</div>
+          <div class="city-feature-title">Boston</div>
+          <div class="city-feature-text">A longtime strong city for beautifully planned time.</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect-section reveal">
+    <div class="section-label">Newsletter</div>
+    <h2 class="section-title">For travel notes, availability,<br>and quiet updates.</h2>
+    <p class="section-body">
+      Join my list for travel details, select availability, and occasional notes worth opening.
+    </p>
+
+    <a href="https://forms.gle/LQGqQFCUZRZs9VYx9" target="_blank" rel="noopener" class="btn-primary">Join the List</a>
+
+    <p class="newsletter-note">
+      Low volume. Thoughtful updates only.
+    </p>
+
+    <div class="social-links">
+      <a href="https://instagram.com/keiki_sea" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/carenotfree" target="_blank" rel="noopener">X</a>
+      <a href="https://bsky.app/profile/keikinw" target="_blank" rel="noopener">Bluesky</a>
+      <a href="https://onlyfans.com/keikipnw" target="_blank" rel="noopener">OnlyFans</a>
+    </div>
+  </section>
+
   <footer>
     <a href="index.html" class="footer-logo">Keiki</a>
     <span class="footer-copy">© 2026 by Keiki. All rights reserved.</span>
