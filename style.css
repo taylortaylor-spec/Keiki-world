@@ -714,8 +714,21 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .nav-links { display: none; }
-  .hero-title { font-size: 2.4rem; }
+  .nav-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    font-size: 0.52rem;
+    letter-spacing: 0.16em;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
 }
 .newsletter-form {
   display: flex;
@@ -823,6 +836,13 @@ footer {
 
   .city-feature-links {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 .footer-badges {
