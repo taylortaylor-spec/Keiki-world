@@ -825,3 +825,43 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.footer-badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.footer-badges a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.95;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-badges a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.footer-badges img {
+  display: block;
+  max-height: 72px;
+  width: auto;
+  max-width: 140px;
+}
+
+@media (max-width: 600px) {
+  .footer-badges {
+    gap: 12px;
+  }
+
+  .footer-badges img {
+    max-height: 60px;
+    max-width: 110px;
+  }
+}
