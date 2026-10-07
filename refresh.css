@@ -1,0 +1,36 @@
+/* Scoped to refreshed pages. Journal keeps its original stylesheet and appearance. */
+body.keiki-refresh {font-family:'EB Garamond',Georgia,serif;font-weight:400;color:#302820;background:#f5f0e8;--ink:#302820;--cream:#f5f0e8;--warm:#ede5d4;--gold:#80613f;--muted:#65594d;--border:rgba(128,97,63,.25);--text:#302820;--soft:#71502e;--bg:#f5f0e8;--panel:#f5f0e8;--panel-2:#ede5d4;--line:#d9cbb7;--accent:#80613f;--accent-2:#80613f;--accent-3:#80613f;--shadow:none;color-scheme:light;}
+.keiki-refresh h1,.keiki-refresh h2,.keiki-refresh h3,.keiki-refresh .hero-title,.keiki-refresh .section-title,.keiki-refresh .grid-card-title,.keiki-refresh .price,.keiki-refresh .nav-logo,.keiki-refresh .footer-logo {font-family:'Fraunces',Georgia,serif !important;font-weight:400;letter-spacing:-.035em;}
+.keiki-refresh h1,.keiki-refresh h2,.keiki-refresh h3 {color:var(--ink);}
+.keiki-refresh .hero-title {font-size:clamp(2.5rem,5.2vw,4.8rem);line-height:1.12;}
+.keiki-refresh h1 em,.keiki-refresh h2 em {color:#71502e;font-style:italic;}
+.keiki-refresh p,.keiki-refresh .section-body,.keiki-refresh .hero-body,.keiki-refresh .faq-answer,.keiki-refresh .grid-card-body {font-family:'EB Garamond',Georgia,serif;font-size:1.15rem;line-height:1.65;}
+.keiki-refresh .section-title {max-width:100%;overflow-wrap:break-word;}
+.keiki-refresh .nav-logo {font-style:italic;}
+.keiki-refresh .hero-image-wrap img {object-position:center 35%;}
+.keiki-refresh .about-image img {object-fit:cover;width:100%;}
+.keiki-refresh .gallery-item img {width:100%;height:auto;object-fit:contain;}
+.keiki-refresh .gallery-caption {font-size:1rem;}
+.keiki-refresh .grid-card {min-width:0;}
+.keiki-refresh .grid-card-body {font-size:1.05rem;}
+.keiki-refresh .contact-panel.dark-panel,.keiki-refresh .experience-panel.side-note {background:var(--ink);}
+.keiki-refresh .dark-panel h2,.keiki-refresh .dark-panel p,.keiki-refresh .dark-panel .contact-panel-label,.keiki-refresh .side-note h2,.keiki-refresh .side-note p,.keiki-refresh .side-note .experience-panel-label {color:var(--cream);}
+.keiki-refresh #main-nav {top:32px;}
+.keiki-refresh .hero,.keiki-refresh .about-section {align-items:start;}
+.keiki-refresh .grid-3 {align-items:stretch;}
+.keiki-refresh .city-panel.dark-panel {background:var(--ink);}
+.keiki-refresh .city-panel.dark-panel h2,.keiki-refresh .city-panel.dark-panel p,.keiki-refresh .city-panel.dark-panel .city-panel-label {color:var(--cream);}
+.keiki-refresh .city-dark-panel {background:var(--ink);}
+.keiki-refresh .city-dark-panel h2,.keiki-refresh .city-dark-panel p,.keiki-refresh .city-dark-panel li,.keiki-refresh .city-dark-panel .city-panel-label {color:var(--cream);}
+.keiki-refresh .quote-band blockquote {font-family:'Fraunces',Georgia,serif;font-weight:400;}
+.keiki-refresh .flow-card,.keiki-refresh .hero:has(+ .strip),.keiki-refresh .mini,.keiki-refresh .node,.keiki-refresh .route,.keiki-refresh .note {background:var(--cream);color:var(--ink);border-color:var(--border);}
+.keiki-refresh .hero:has(+ .strip)::after {display:none;}
+.keiki-refresh .hero:has(+ .strip) h1 {max-width:100%;}
+.keiki-refresh .page {color:var(--ink);}
+.keiki-refresh .flow-wrap,.keiki-refresh .bubble,.keiki-refresh .bubble.primary,.keiki-refresh .rule-card,.keiki-refresh .footer-rule {background:var(--cream);color:var(--ink);border-color:var(--border);box-shadow:none;}
+.keiki-refresh .bubble .badge {color:var(--gold);}
+.keiki-refresh .connector {background:var(--border);}
+.keiki-refresh .hero-image-wrap img,.keiki-refresh .about-image img {filter:none;}
+@media(max-width:900px) {.keiki-refresh .nav-links {gap:12px;flex-wrap:wrap;justify-content:flex-end;}.keiki-refresh nav {gap:14px;padding:16px 20px;}.keiki-refresh .nav-links a {font-size:.65rem;letter-spacing:.08em;}.keiki-refresh .hero-title {font-size:clamp(2.3rem,8vw,3.6rem);}.keiki-refresh .grid-3 {grid-template-columns:1fr;}.keiki-refresh .hero-image-wrap {min-width:0;}.keiki-refresh .hero-image-wrap img {max-width:100%;}}
+@media(max-width:480px) {.keiki-refresh .nav-logo {font-size:1.8rem;}.keiki-refresh .nav-links {gap:8px 10px;}.keiki-refresh p {font-size:1.08rem;}.keiki-refresh .experience-panel,.keiki-refresh .contact-panel {padding:24px 20px;}}
+@media(pointer:coarse) {.keiki-refresh {cursor:auto;}.keiki-refresh #cursor,.keiki-refresh #cursor-ring {display:none;}}
